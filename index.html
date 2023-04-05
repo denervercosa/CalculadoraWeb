@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+<!-- link href é para linkar com o CSS e Rel para explicar que tipo de doc é: documento de estilização  -->
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+<!-- Header é o cabeçalho do site -->
+    <header>
+        <h1>Calculadora Simples</h1>
+    </header>
+    
+<!-- Form é formulário -->
+    <div id="form">
+<!-- Como vai ser uma calculadora, o input é Number. -->
+<!-- id é para identificação no CSS como n1 -->
+        <input type="number" id="n1" placeholder="Digite o primeiro número"><br><br>
+<!-- placeholder é a escrita na caixa de texto vazia -->
+
+        <select id="selector">
+<!-- Option é para abrir opções no selector, que no caso é o + -->
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+        </select><br><br>
+
+<!-- id é para identificação no CSS como n2 -->
+        <input type="number" id="n2" placeholder="Digite o segundo número"><br><br>
+<!-- placeholder é a escrita na caixa de texto vazia -->
+
+<!--button é para criar o botão Calcular-->
+        <button onclick="calcular">Calcular</button>
+    </div>
+
+    <div>
+        <h3 id="resultado"></h3>
+    </div>
+<!-- p é um paragrafo normal, coloquei ID me para estilizar -->
+    <p id="me">Feito por: Dener Verçosa</p>
+
+    <!-- Boa pratica linkar o JavaScript no final pq ele lê de cima pra baixa e pode dar problema se estiver no começo -->
+<script src="./scripts/script.js"></script>
+</body>
+</html>
